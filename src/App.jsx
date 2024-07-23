@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import './App.css';
 import TaskForm from './components/TaskForm';
+import Header from './Header';
 
 const apiKey = "RFpu46yG7-_3R1g976kZwE7Cl2mSyei7pBGgZ-0fU5nGJPOA5A";
 
@@ -32,6 +33,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <TaskForm onFormSubmit={onFormSubmit} />
       <div className="content-box">
       <div className="content">
